@@ -10,6 +10,20 @@ html{
     font-style: normal; 
 }
 
+h1
+{
+  font-family: Bebas;
+  color: #ffc107;
+  font-size: 80px;
+}
+
+h2
+{
+  font-family: Bebas;
+  color: #ffc107;
+  font-size: 32px;
+}
+
 /* Set the width of the sidebar to 120px */
 .w3-sidebar {width: 120px;background: #222;}
 /* Add a left margin to the "page content" that matches the width of the sidebar (120px) */
@@ -179,7 +193,7 @@ textarea:focus {
 }
 
 #cicons {
-  padding-top: 8%;
+  padding-top: 4%;
   text-decoration: none;
 }
 
@@ -188,12 +202,14 @@ textarea:focus {
   font-family: 'Roboto' ;
 }
 
-#fbphone
+#sendphone
 {
   padding-bottom: 30px;
 }
 
-
+#fbetciconsinphone{
+  padding-bottom: 30px;
+}
 
 /* Youtube Live Stream */
 .intrinsic-container {
@@ -223,6 +239,12 @@ textarea:focus {
 .mystyle
 {
   display: none;
+}
+
+
+/* SPONSORS */
+.titlesponsorsandpartners{
+  padding-bottom: 30px;
 }
 /*
 input::-webkit-input-placeholder, textarea::-webkit-input-placeholder {

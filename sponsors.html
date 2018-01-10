@@ -96,35 +96,61 @@
         <div class="w3-container">
             <!--SPONSORS-->
             <center>
-            <div id=""  class="w3-container w3-cell w3-center">
-                <h1 style="font-family: 'Bebas'"><center>SPONSORS</center></h1>
+            <div id=""  class="w3-container w3-cell w3-middle">
                 <!--<img src="img/sponsors.jpg"  width="" height="1080px">-->
                 <div class="w3-row">
-                <div class="w3-container">
-                <div class="w3-content w3-section" style="max-width:500px">
-                  <img class="mySlides" src="img/tripoff.png" style="width:100%">
-                  <img class="mySlides" src="img/stealth.png" style="width:100%">
-                  <img class="mySlides" src="img/playtonia.png" style="width:100%">
-                  <img class="mySlides" src="img/msi.png" style="width:100%">
-                  <img class="mySlides" src="img/rnr.png" style="width:100%">
-                </div>
+                    <div class="w3-container w3-half w3-center">
+                        <div class="titlesponsorsandpartners w3-center">
+                            <h1>SPONSORS</h1>
+                        </div>
+                        <div class="w3-content w3-section" >
+                          <img class="mySlides" src="img/tripoff.png" style="width:100%">
+                          <img class="mySlides" src="img/playtonia.png" style="width:100%">
+                          <img class="mySlides" src="img/msi.png" style="width:100%">
+                        </div>
+                    </div>
+                    <div class="w3-container w3-half">
+                        <div class="titlesponsorsandpartners w3-center">
+                            <h1>PARTNERS</h1>
+                        </div>
+                        <div class="w3-content w3-section">
+                          <img class="mySlidesi" src="img/stealth.png" style="width:100%">
+                          <img class="mySlidesi" src="img/rnr.png" style="width:100%">
+                        </div>
+                    </div>
                 </div>
 
                 <script>
-                var myIndex = 0;
-                carousel();
+                    var myIndex = 0;
+                    carousel();
 
-                function carousel() {
-                    var i;
-                    var x = document.getElementsByClassName("mySlides");
-                    for (i = 0; i < x.length; i++) {
-                       x[i].style.display = "none";  
+                    function carousel() {
+                        var i;
+                        var x = document.getElementsByClassName("mySlides");
+                        for (i = 0; i < x.length; i++) {
+                           x[i].style.display = "none";  
+                        }
+                        myIndex++;
+                        if (myIndex > x.length) {myIndex = 1}    
+                        x[myIndex-1].style.display = "block";  
+                        setTimeout(carousel, 2000); // Change image every 2 seconds
                     }
-                    myIndex++;
-                    if (myIndex > x.length) {myIndex = 1}    
-                    x[myIndex-1].style.display = "block";  
-                    setTimeout(carousel, 2000); // Change image every 2 seconds
-                }
+                </script>
+                <script type="text/javascript">
+                    var myIndex2 = 0;
+                    carousel2();
+
+                    function carousel2() {
+                        var j;
+                        var y = document.getElementsByClassName("mySlidesi");
+                        for (j= 0; j < y.length; j++) {
+                           y[j].style.display = "none";  
+                        }
+                        myIndex2++;
+                        if (myIndex2 > y.length) {myIndex2 = 1}    
+                        y[myIndex2-1].style.display = "block";  
+                        setTimeout(carousel2, 3000); // Change image every 2 seconds
+                    }
                 </script>
             </div>
             </center>

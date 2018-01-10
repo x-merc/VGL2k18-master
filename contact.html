@@ -104,7 +104,7 @@
                                 <div class="w3-quarter w3-container"></div>
                                     <div class="w3-threequarter w3-container">
                                         <center>
-                                        <form id="contactform" enctype="multipart/form-data" action="<?php echo $_SERVER['PHP_SELF'];?>">
+                                        <form id="contactform" enctype="multipart/form-data" action="POST">
                                             <div class="w3-container">
                                                 <p><input class="w3-input w3-hover-black" type="text" placeholder="First Name" style="width:85%"></p>
                                             </div>
@@ -125,37 +125,41 @@
                                                 <p><textarea class="w3-input w3-hover-black" placeholder="Type your message here..." style="width:85%; height:30%"></textarea></p>
                                             </div>
                                             <br>
-                                            <p><button id="send" class="w3-button w3-block  w3-ripple">SEND</button></p>
+                                            <div id="sendphone">
+                                                <p><button id="send" class="w3-button w3-block  w3-ripple">SEND</button></p>
+                                            </div>
                                     </form>
                                     </center>
                                 </div>
                             </div>
                         </div>
                         <div class="w3-half w3-container w3-center">
-                            <div class="w3-row" id="conicons">
-                                <div class="w3-threequarter w3-container w3-hide-small">
-                                    <p><div class="w3-container w3-third"><a href="https://www.facebook.com/tagvitu/?ref=br_rs" target="_blank"><i class="fa fa-facebook fa-3x"></i></a></div><p>
-                                    <p><div class="w3-third w3-container"><a href="https://www.youtube.com/user/TAGclub2012" target="_blank"><i class="fa fa-youtube fa-3x"></i></a></div></p>
-                                    <p><div class="w3-third w3-container"><a href="https://www.instagram.com/tagclub.vit/" target="_blank"><i class="fa fa-instagram fa-3x"></i></a></div></p>
-                                </div> 
-                                <div class="w3-hide-large w3-hide-medium" >
-                                    <div class="w3-row"></div>
-                                    <p><div class="w3-container w3-half" id="fbphone"><a href="https://www.facebook.com/tagvitu/?ref=br_rs" target="_blank"><i class="fa fa-facebook fa-3x"></i></a></div><p>
-                                    <p><div class="w3-half w3-container"><a href="https://www.instagram.com/tagclub.vit/" target="_blank"><i class="fa fa-instagram fa-3x"></i></a></div></p>
-                                </div>
-                            </div>
+                            
                             <div class="w3-row" id="cicons">
                                 <div class="w3-threequarter w3-container">
-                                    <p><div><a href="mailto:tag.vitu@gmail.com?Subject=Website Contact" target="_top"><i class="fa fa-envelope fa-2x"></i> tagclub.vitu@gmail.com</a></div>
-                                    </p>
-                                    <br>
                                     <p><div><a href="tel:+91-9786000131"><i class="fa fa-phone fa-2x"></i> +91-9786000131</a></div>
+                                    <br>
+                                    <p><div><a href="mailto:tag.vitu@gmail.com?Subject=Website Contact" target="_top"><i class="fa fa-envelope fa-2x"></i> tagclub.vitu@gmail.com</a></div>
                                     <br>
                                     <p><div><a href="#"><i class="fa fa-android fa-2x"></i> official VGL'18 App</a></div>
                                     <br>
                                     <p><div><a href="https://www.google.com/maps/d/viewer?mid=1mur3OBbdG2VL-UPGOTV-j2vO6JE&hl=en_US&ll=12.973079999999985%2C79.15911200000005&z=17" target="_blank"><i class="fa fa-map-marker fa-2x"></i> VIT University, Vellore - 632014.</a></div>
                                     <br>
                                 </div> 
+                            </div>
+                            <div class="w3-row" id="conicons">
+                                <div class="w3-threequarter w3-container w3-hide-small">
+                                    <p><div class="w3-container w3-third"><a href="https://www.facebook.com/tagvitu/?ref=br_rs" target="_blank"><i class="fa fa-facebook fa-3x"></i></a></div><p>
+                                    <p><div class="w3-third w3-container"><a href="https://www.youtube.com/user/TAGclub2012" target="_blank"><i class="fa fa-youtube fa-3x"></i></a></div></p>
+                                    <p><div class="w3-third w3-container"><a href="https://www.instagram.com/tagclub.vit/" target="_blank"><i class="fa fa-instagram fa-3x"></i></a></div></p>
+                                </div> 
+                                <div class="w3-hide-large w3-hide-medium" id="fbetciconsinphone">
+                                    <div class="w3-row" >
+                                    <p><div class="w3-col s4"><a href="https://www.facebook.com/tagvitu/?ref=br_rs" target="_blank"><i class="fa fa-facebook fa-3x"></i></a></div><p>
+                                    <p><div class="w3-col s4 "><a href="https://www.youtube.com/user/TAGclub2012" target="_blank"><i class="fa fa-youtube fa-3x"></i></a></div></p>
+                                    <p><div class="w3-col s4 "><a href="https://www.instagram.com/tagclub.vit/" target="_blank"><i class="fa fa-instagram fa-3x"></i></a></div></p>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>
