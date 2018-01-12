@@ -25,9 +25,11 @@ h2
 }
 
 /* Set the width of the sidebar to 120px */
-.w3-sidebar {width: 120px;background: #222;}
+.w3-sidebar {width: 120px;background: #222;
+z-index: 99999;}
 /* Add a left margin to the "page content" that matches the width of the sidebar (120px) */
-#main {margin-left: 120px}
+#main {margin-left: 120px
+}
 /* Remove margins from "page content" on small screens */
 @media only screen and (max-width: 600px) {#main {margin-left: 0;} html{max-height: 100%;}}
 
@@ -70,6 +72,7 @@ footer{
     background: #222222;
     border-top: solid;
     border-top-color: #ffc107;
+    z-index: 9999;
 }
 
 /*General */
@@ -162,6 +165,22 @@ input[type=number]::-webkit-outer-spin-button {
   font-family: Bebas;
 }
 
+input[type=number]::-moz-inner-spin-button, 
+input[type=number]::-moz-outer-spin-button { 
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    margin: 0; 
+    border-bottom: 2px solid #ffc107;
+  background-color: transparent;
+  color: #ffc107;
+  font-family: Bebas;
+}
+
+input[type=number] {
+    -moz-appearance:textfield;
+}
+
 input:focus { 
     outline: none !important;
     border-color: #ffc107;
@@ -195,6 +214,9 @@ textarea:focus {
 #cicons {
   padding-top: 4%;
   text-decoration: none;
+  align-content: left;
+  text-align: left;
+  padding-left: 20%;
 }
 
 #cicons a {
@@ -245,6 +267,12 @@ textarea:focus {
 /* SPONSORS */
 .titlesponsorsandpartners{
   padding-bottom: 30px;
+}
+
+/*GAME SLIDER */
+#gamessection{
+  z-index: -9999;
+  overflow: hidden;
 }
 /*
 input::-webkit-input-placeholder, textarea::-webkit-input-placeholder {

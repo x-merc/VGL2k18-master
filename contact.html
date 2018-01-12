@@ -137,13 +137,13 @@
                             
                             <div class="w3-row" id="cicons">
                                 <div class="w3-threequarter w3-container">
-                                    <p><div><a href="tel:+91-9786000131"><i class="fa fa-phone fa-2x"></i> +91-9786000131</a></div>
+                                    <p><div><a href="tel:+91-9786000131"><i class="fa fa-phone fa-2x"></i>&nbsp;&nbsp; +91-9786000131</a></div>
                                     <br>
-                                    <p><div><a href="mailto:tag.vitu@gmail.com?Subject=Website Contact" target="_top"><i class="fa fa-envelope fa-2x"></i> tagclub.vitu@gmail.com</a></div>
+                                    <p><div><a href="mailto:tag.vitu@gmail.com?Subject=Website Contact" target="_top"><i class="fa fa-envelope fa-2x"></i>&nbsp;&nbsp; tagclub.vitu@gmail.com</a></div>
                                     <br>
-                                    <p><div><a href="#"><i class="fa fa-android fa-2x"></i> official VGL'18 App</a></div>
+                                    <p><div><a href="#"><i class="fa fa-android fa-2x"></i>&nbsp;&nbsp; official VGL'18 App</a></div>
                                     <br>
-                                    <p><div><a href="https://www.google.com/maps/d/viewer?mid=1mur3OBbdG2VL-UPGOTV-j2vO6JE&hl=en_US&ll=12.973079999999985%2C79.15911200000005&z=17" target="_blank"><i class="fa fa-map-marker fa-2x"></i> VIT University, Vellore - 632014.</a></div>
+                                    <p><div><a href="https://www.google.com/maps/d/viewer?mid=1mur3OBbdG2VL-UPGOTV-j2vO6JE&hl=en_US&ll=12.973079999999985%2C79.15911200000005&z=17" target="_blank"><i class="fa fa-map-marker fa-2x"></i>&nbsp;&nbsp; VIT University, Vellore - 632014.</a></div>
                                     <br>
                                 </div> 
                             </div>
@@ -153,7 +153,7 @@
                                     <p><div class="w3-third w3-container"><a href="https://www.youtube.com/user/TAGclub2012" target="_blank"><i class="fa fa-youtube fa-3x"></i></a></div></p>
                                     <p><div class="w3-third w3-container"><a href="https://www.instagram.com/tagclub.vit/" target="_blank"><i class="fa fa-instagram fa-3x"></i></a></div></p>
                                 </div> 
-                                <div class="w3-hide-large w3-hide-medium" id="fbetciconsinphone">
+                                <div class="w3-hide-large w3-hide-medium" >
                                     <div class="w3-row" >
                                     <p><div class="w3-col s4"><a href="https://www.facebook.com/tagvitu/?ref=br_rs" target="_blank"><i class="fa fa-facebook fa-3x"></i></a></div><p>
                                     <p><div class="w3-col s4 "><a href="https://www.youtube.com/user/TAGclub2012" target="_blank"><i class="fa fa-youtube fa-3x"></i></a></div></p>
@@ -164,6 +164,26 @@
                         </div>
                     </div>
                 </div>
+                <?php 
+                                            $con=mysql_connect("localhost", "root", "") or die("mysql connection is failure.");
+                                            mysql_select_db("vgl") or die("Database does not exists.");
+                                            
+                                            if (isset($_POST['button']))
+                                            {
+                                            $name=$_POST['name'];
+                                            $lname=$_POST['lname'];
+                                            $email=$_POST['email'];
+                                            $phno=$_POST['phno'];
+                                            $mesg=$_POST['mesg'];
+                                            if (preg_match("/^[a-zA-Z0-9._-]+@[a-zA-Z0-9-]+.[a-zA-Z.]{2,5}$/", $email)&&preg_match("/^[a-zA-Z]/", $name)&&preg_match("/^[a-zA-Z]/", $lname)&&preg_match("/^[a-zA-Z]/", $mesg)&&preg_match("/^[0-9]/", $phno)) {
+                                                $query = "INSERT INTO `vgl_database18`(`Name`, `Lname`, `email`, `Phno`, `mesg`) VALUES ('$name','$lname','$email','$phno','$mesg')";
+                                                if (mysql_query($query)or die(mysql_error()))
+                                                {
+                                                    
+                                                }
+                                            }
+                                        }
+                                            ?>
             <!--
                 <center>
                 <form id="contactform" enctype="multipart/form-data" action="<?php echo $_SERVER['PHP_SELF'];?>">
@@ -195,7 +215,7 @@
         </div>
 
         
-        <footer class="w3-hide-small w3-text-white w3-padding-large w3-bottom w3-bar w3-center">
+        <footer class="w3-hide-small w3-text-white w3-padding-large w3-padding w3-bottom w3-bar w3-center">
            &copy; <img src="img/taglogo.png" width="28.625x" height="17.125px"> (T.A.G) Club
         </footer>
     </div>
