@@ -9,7 +9,7 @@ html{
     font-weight: normal; 
     font-style: normal; 
     background-size: cover;
-    overflow: hidden;
+    overflow-x: hidden;
 }
 
 h1
@@ -50,10 +50,11 @@ z-index: 99999;}
 .sideNav{
     display: none;
     width: 80vw;
-    overflow: scroll;
+    overflow: auto;
     font-family: 'Anton', sans-serif;
-    position: fixed;
+    position: absolute;
     z-index: 9999;
+
 }
 
 .sideNav a{
