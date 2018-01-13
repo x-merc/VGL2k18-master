@@ -98,7 +98,7 @@ body ::-moz-selection {
   overflow: hidden;
 }
 .slide-bg-text {
-  font-family: Bebas;
+  font-family: 'Anton', sans-serif;
   color: #ffc107;
   font-size: 40vh;
   line-height: .8;
@@ -144,7 +144,7 @@ body ::-moz-selection {
   }
 }
 .slide-content-text {
-  font-family: Bebas;
+  font-family: 'Anton', sans-serif;
   font-size: 9rem;
   letter-spacing: .2rem;
   line-height: 1;

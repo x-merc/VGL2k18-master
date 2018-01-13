@@ -88,7 +88,7 @@
   opacity: 0;
 }
 .tl-content h1 {
-  font-family: Bebas,sans-serif;
+  font-family: 'Anton', sans-serif;
   text-transform: uppercase;
   color: #ffc107;
   font-size: 1.44rem;
@@ -123,13 +123,13 @@
   border-bottom: 1px solid #fff;
 }
 .tl-year p {
-  font-family: Bebas,sans-serif;
+  font-family: 'Anton', sans-serif;
   font-size: 1.728em;
   line-height: 0;
 }
 
 .tl-year h2 {
-  font-family: Bebas,sans-serif;
+  font-family: 'Anton', sans-serif;
   text-transform: uppercase;
   color: #ffc107;
   font-size: 4rem;

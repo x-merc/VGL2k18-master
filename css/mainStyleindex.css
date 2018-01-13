@@ -1,14 +1,18 @@
 @import url(https://fonts.googleapis.com/css?family=Lato:100,300,400);
 
+@media only screen and (max-width: 600px){ html { background-image: none !important; } }
 
 html{
-    background: #363636;
+    background: url("../img/backgroundpc.png") #363636 no-repeat center center fixed;
     max-height: 95vh;
     /*font-family: 'BebasNeueRegular'; */
-    font-family: 'BebasNeue';
+    font-family: 'Anton', sans-serif;
     font-weight: normal; 
     font-style: normal; 
-    background-size: cover;
+    -webkit-background-size : cover;
+    -moz-background-size : cover;
+    -o-background-size : cover;
+    background-size : cover;
     overflow: hidden;
 }
 
@@ -97,13 +101,13 @@ footer{
 }
 
 #ldbg{
-  align-content: center;
-  margin: 0 auto;
-  display: block;
-  max-width: 1920px;
-  overflow-y: hidden;
-  position: fixed;
-  
+	align-content: center;
+	margin: 0 auto;
+	display: block;
+	max-width: 1920px;
+	overflow-y: hidden;
+	position: fixed;
+	
 }
 
 /* Contact Us form */
@@ -142,15 +146,15 @@ color: #ffc107 !important;
 
 input[type=text] {
     border-bottom: 2px solid #ffc107;
-  background-color: transparent;
-  color : #ffc107;
+	background-color: transparent;
+	color : #ffc107;
   font-family: 'Anton', sans-serif;
 }
 
 input[type=email] {
     border-bottom: 2px solid #ffc107;
-  background-color: transparent;
-  color: #ffc107;
+	background-color: transparent;
+	color: #ffc107;
   font-family: 'Anton', sans-serif;
 }
 
@@ -162,9 +166,9 @@ input[type=number] {
 }
 
 textarea {
-  border-bottom: 2px solid #ffc107;
-  background-color: transparent;
-  color : #ffc107;
+	border-bottom: 2px solid #ffc107;
+	background-color: transparent;
+	color : #ffc107;
   font-family: 'Anton', sans-serif;
 }
 
@@ -208,7 +212,7 @@ textarea:focus {
 }
 
 #send{
-  background: #ffc107; 
+	background: #ffc107; 
   color: black; 
   width: 200px;
   border-radius: 25px;

@@ -28,7 +28,7 @@
           transform: translateY(-30px);
   opacity: 0;
   font-size: 80px;
-  font-family: Bebas;
+  font-family: 'Anton', sans-serif;
   color: #ffc107;
 }
 .slider.s--ready .slider__top-heading {
